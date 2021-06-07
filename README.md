@@ -4,7 +4,7 @@
 
 ## BRIEF
 
-A dice game | [**DEMO**](https://howiework.github.io/FIXME/)
+A dice game | [**DEMO**](https://howiework.github.io/Pig-game/)
 
 ## KEYWORDS
 
