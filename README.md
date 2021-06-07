@@ -22,3 +22,26 @@ DOM, JavaScript, Events
 ### About Scores
 
 Whosever final score reaches 100 will win the game!
+
+### Flowchart
+
+![Pig-game flowchart](./Pig-game-flowchart.svg 'Pig-game flowchart')
+
+```mermaid
+graph TD
+A([User: roll dice]) --> A1[Generate a random dice]
+    A1 --> A2[Display dice]
+    A2 --> A3{Is dice 1?}
+    A3 -->|No|A4[Add dice to current score]
+    A3 -->|Yes|D[Switch player]
+    A4 --> A5[Display new score]
+
+    B([User: hold score])--> B1[Add current score to total score]
+    B1 --> B2{Score >= 100?}
+    B2 -->|No|D
+    B2 -->|Yes|B3[Current player wins!]
+
+
+    C([User: reset game])--> C1[Set all scores to 0]
+    C1 --> C2[Set player 1 as starting player]
+```
